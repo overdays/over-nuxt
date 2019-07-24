@@ -13,6 +13,7 @@ module.exports.createUser = async (req, res) => {
         inits: '',
         pass,
         email: '',
+        img: '',
         social: {
             vk: '',
             telegram: ''
