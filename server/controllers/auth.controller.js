@@ -1,3 +1,5 @@
-module.exports.login = (request, response) => {
+const Users = require('../models/users.model')
+
+module.exports.join = (request, response) => {
     
 }
