@@ -32,10 +32,5 @@ module.exports.getUsers = async (req, res) => {
 
 module.exports.getUser = async (req, res) => {
     const user = await Users.findOne({login: req.params['login']}).select('-pass')
-
-    if (user) {
-        res.json(user)
-    } else {
-        res.json({message: 'Такого пользователя нет'})
-    }
+    res.json(user)
 }

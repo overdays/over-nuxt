@@ -23,6 +23,10 @@ const usersSchema = new Schema({
         required: true,
         trim: true
     },
+    img: {
+        type: String,
+        required: true
+    },
     social: {
         type: Map,
         of: String,
